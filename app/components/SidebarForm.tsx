@@ -149,6 +149,7 @@ export default function SidebarForm() {
           </div>
 
           <Button
+            type="submit"
             variant="primary"
             className={`w-full ${state === "submitting" ? "opacity-60 cursor-not-allowed" : ""}`}
             size="md"

@@ -12,6 +12,7 @@ interface ButtonProps {
   className?: string;
   id?: string;
   ariaLabel?: string;
+  type?: "button" | "submit" | "reset";
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -40,6 +41,7 @@ export default function Button({
   className = "",
   id,
   ariaLabel,
+  type = "button",
 }: ButtonProps) {
   const baseStyles =
     "inline-flex items-center justify-center gap-2 rounded-lg font-semibold transition-all duration-300 cursor-pointer whitespace-nowrap";
@@ -69,7 +71,7 @@ export default function Button({
   }
 
   return (
-    <button onClick={onClick} className={classes} id={id} type="button" aria-label={ariaLabel}>
+    <button onClick={onClick} className={classes} id={id} type={type} aria-label={ariaLabel}>
       {children}
     </button>
   );
