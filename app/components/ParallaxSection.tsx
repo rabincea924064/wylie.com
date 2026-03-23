@@ -13,7 +13,7 @@ interface ParallaxSectionProps {
   children: React.ReactNode;
   bgImageUrl: string;
   className?: string;
-  speed?: number; // Adjust parallax intensity (e.g. 0.3 = 30% slower than scroll)
+  speed?: number;
 }
 
 export default function ParallaxSection({
@@ -28,19 +28,20 @@ export default function ParallaxSection({
   useGSAP(
     () => {
       if (window.innerWidth < 1024) return;
+
       const mm = gsap.matchMedia();
 
       mm.add("(min-width: 768px)", () => {
         if (!container.current || !bgImage.current) return;
 
         gsap.to(bgImage.current, {
-          y: () => (window.innerHeight) * speed, // Move the image down
+          y: () => (window.innerHeight) * speed,
           ease: "none",
           scrollTrigger: {
             trigger: container.current,
-            start: "top bottom", // Trigger when top of section hits bottom of viewport
-            end: "bottom top",   // End when bottom of section hits top of viewport
-            scrub: true,         // Smooth interpolating tied directly to scrollbar
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true,
           },
         });
       });
@@ -49,21 +50,20 @@ export default function ParallaxSection({
   );
 
   return (
-    <section 
-      ref={container} 
+    <section
+      ref={container}
       className={`relative overflow-hidden ${className}`}
     >
-      {/* Background Layer inside an oversized container to handle the move */}
-      <div 
+      {/* Background Layer */}
+      <div
         className="absolute left-0 right-0 w-full h-[150%] top-[-25%] z-0"
-        ref={bgImage} 
+        ref={bgImage}
         style={{
           backgroundImage: `url(${bgImageUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-black/70 mix-blend-multiply" />
       </div>
 

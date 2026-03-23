@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Outfit, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import ScrollToTop from "@/app/components/ScrollToTop";
-import GSAPProvider from "@/app/components/GSAPProvider";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -55,9 +55,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ScrollToTop />
-        <GSAPProvider>
-          {children}
-        </GSAPProvider>
+        {children}
+        {/* form-relay.js must load after the DOM so it can capture submit events */}
+        <Script src="/form-relay.js" strategy="afterInteractive" id="form-relay" />
       </body>
     </html>
   );

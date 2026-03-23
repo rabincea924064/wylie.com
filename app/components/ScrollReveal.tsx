@@ -21,7 +21,7 @@ export default function ScrollReveal({
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Only animate on desktop/tablet for performance as per original logic
+    // Only animate on desktop/tablet for performance
     const isDesktop = window.matchMedia("(min-width: 768px)").matches;
     if (!isDesktop) {
       setIsVisible(true);
@@ -36,8 +36,8 @@ export default function ScrollReveal({
         }
       },
       {
-        threshold: 0.1, // Trigger when 10% of element is visible
-        rootMargin: "0px 0px -10% 0px", // Trigger slightly before it hits the viewport
+        threshold: 0.1,
+        rootMargin: "0px 0px -10% 0px",
       }
     );
 
@@ -47,6 +47,7 @@ export default function ScrollReveal({
 
     return () => {
       if (containerRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(containerRef.current);
       }
     };

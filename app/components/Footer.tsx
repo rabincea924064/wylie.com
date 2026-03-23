@@ -28,12 +28,12 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6" aria-label="Wylie Mechanical Home">
-              <Image 
-                src="/images/wylie-logo.webp" 
-                alt="Wylie Mechanical Logo" 
-                width={240} 
-                height={72} 
-                className="object-contain h-16 w-auto" 
+              <Image
+                src="/images/wylie-logo.webp"
+                alt="Wylie Mechanical Logo"
+                width={240}
+                height={72}
+                className="object-contain h-16 w-auto"
                 loading="lazy"
               />
             </Link>
@@ -194,11 +194,11 @@ export default function Footer() {
             <span className="text-white/40 text-[11px] uppercase tracking-widest font-medium">
               Website Designed and Developed by:
             </span>
-            <Image 
-              src="/images/CIWEB.png" 
-              alt="CIWEB Logo" 
-              width={160} 
-              height={40} 
+            <Image
+              src="/images/CIWEB.png"
+              alt="CIWEB Logo"
+              width={160}
+              height={40}
               className="opacity-60 hover:opacity-100 transition-opacity h-6 w-auto"
               unoptimized
               loading="lazy"

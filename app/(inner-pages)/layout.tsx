@@ -14,17 +14,15 @@ export default function InnerPagesLayout({ children }: { children: React.ReactNo
         <InnerHero />
 
         <Section variant="standard">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
             {/* Main content area */}
             <div className="lg:w-2/3 w-full">
               {children}
             </div>
             
             {/* Sidebar with form */}
-            <aside className="lg:w-1/3 w-full shrink-0">
-              <div className="sticky top-28">
-                <SidebarForm />
-              </div>
+            <aside className="lg:w-1/3 w-full shrink-0 lg:sticky lg:top-28">
+              <SidebarForm />
             </aside>
           </div>
         </Section>

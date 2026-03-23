@@ -57,9 +57,7 @@ export default function Navbar() {
         window.requestAnimationFrame(() => {
           const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
           const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          const scrolledPct = (winScroll / height) * 100;
-          
-          setScrollProgress(scrolledPct);
+          setScrollProgress(height > 0 ? (winScroll / height) * 100 : 0);
           setScrolled(winScroll > 40);
           ticking = false;
         });
@@ -81,33 +79,32 @@ export default function Navbar() {
       id="main-nav"
     >
       {/* Scroll Progress Indicator */}
-      <div 
+      <div
         className="absolute top-0 left-0 h-[2px] bg-primary z-[60] transition-all duration-75"
         style={{ width: `${scrollProgress}%` }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Navigation content... (same as before) */}
         <div className="flex items-center justify-between h-20 relative">
-          {/* Logo... */}
-          <Link 
-            href="/" 
+          {/* Logo */}
+          <Link
+            href="/"
             className={`flex items-center shrink-0 transition-all duration-300 ${
               scrolled ? "w-32 lg:w-40" : "w-[120px] lg:w-[150px]"
-            }`} 
+            }`}
             id="nav-logo"
             aria-label="Wylie Mechanical Home"
           >
-            <div 
+            <div
               className={`transition-all duration-300 origin-top-left ${
-                scrolled 
-                  ? "relative w-full h-12 lg:h-16" 
+                scrolled
+                  ? "relative w-full h-12 lg:h-16"
                   : "absolute top-0 w-[120px] h-[120px] lg:w-[150px] lg:h-[150px] z-50"
               }`}
             >
-              <Image 
-                src="/images/wylie-logo.webp" 
-                alt="Wylie Mechanical Logo" 
+              <Image
+                src="/images/wylie-logo.webp"
+                alt="Wylie Mechanical Logo"
                 fill
                 sizes="150px"
                 className="object-contain"
@@ -116,7 +113,7 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Nav... */}
+          {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <div
@@ -171,7 +168,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA + Mobile Toggle... */}
+          {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-3">
             <Button
               href="tel:613-577-2726"
@@ -229,8 +226,8 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu with CSS transition-all */}
-      <div 
+      {/* Mobile Menu with CSS transition */}
+      <div
         className={`lg:hidden bg-white border-t border-border overflow-hidden transition-all duration-300 ease-in-out ${
           mobileOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
         }`}

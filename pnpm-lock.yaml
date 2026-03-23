@@ -21,6 +21,15 @@ importers:
         specifier: ^3.14.2
         version: 3.14.2
       next:
+<<<<<<< HEAD
+        specifier: 16.2.1
+        version: 16.2.1(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+=======
         specifier: ^16.2.1
         version: 16.2.1(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react:
@@ -28,6 +37,7 @@ importers:
         version: 19.2.4
       react-dom:
         specifier: ^19.2.4
+>>>>>>> 7c65113 (Initial commit)
         version: 19.2.4(react@19.2.4)
     devDependencies:
       '@tailwindcss/postcss':
@@ -48,12 +58,15 @@ importers:
       eslint-config-next:
         specifier: 16.2.1
         version: 16.2.1(@typescript-eslint/parser@8.57.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
+<<<<<<< HEAD
+=======
       sharp:
         specifier: ^0.34.5
         version: 0.34.5
       svgo:
         specifier: ^4.0.1
         version: 4.0.1
+>>>>>>> 7c65113 (Initial commit)
       tailwindcss:
         specifier: ^4
         version: 4.2.2
@@ -878,10 +891,13 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
+<<<<<<< HEAD
+=======
   commander@11.1.0:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
 
+>>>>>>> 7c65113 (Initial commit)
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
@@ -895,6 +911,8 @@ packages:
   css-select@5.2.2:
     resolution: {integrity: sha512-TizTzUddG/xYLA3NXodFM0fSbNizXjOKhqiQQwvhlspadZokn1KDy0NZFS0wuEubIYAV5/c1/lAr0TaaFXEXzw==}
 
+<<<<<<< HEAD
+=======
   css-tree@2.2.1:
     resolution: {integrity: sha512-OA0mILzGc1kCOCSJerOeqDxDQ4HOh+G8NbOJFOTgOCzpw7fCBubk0fEyxp8AgOL/jvLgYA/uV0cMbe43ElF1JA==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
@@ -903,14 +921,18 @@ packages:
     resolution: {integrity: sha512-X7sjQzceUhu1u7Y/ylrRZFU2FS6LRiFVp6rKLPg23y3x3c3DOKAwuXGDp+PAGjh6CSnCjYeAul8pcT8bAl+lSA==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
 
+>>>>>>> 7c65113 (Initial commit)
   css-what@6.2.2:
     resolution: {integrity: sha512-u/O3vwbptzhMs3L1fQE82ZSLHQQfto5gyZzwteVIEyeaY5Fc7R4dapF/BvRoSYFeqfBk4m0V1Vafq5Pjv25wvA==}
     engines: {node: '>= 6'}
 
+<<<<<<< HEAD
+=======
   csso@5.0.5:
     resolution: {integrity: sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
 
+>>>>>>> 7c65113 (Initial commit)
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
@@ -1612,12 +1634,15 @@ packages:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
 
+<<<<<<< HEAD
+=======
   mdn-data@2.0.28:
     resolution: {integrity: sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==}
 
   mdn-data@2.27.1:
     resolution: {integrity: sha512-9Yubnt3e8A0OKwxYSXyhLymGW4sCufcLG6VdiDdUGVkPhpqLxlvP5vl1983gQjJl3tqbrM731mjaZaP68AgosQ==}
 
+>>>>>>> 7c65113 (Initial commit)
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -1857,10 +1882,13 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
+<<<<<<< HEAD
+=======
   sax@1.6.0:
     resolution: {integrity: sha512-6R3J5M4AcbtLUdZmRv2SygeVaM7IhrLXu9BmnOGmmACak8fiUtOsYNWUS4uK7upbmHIBbLBeFeI//477BKLBzA==}
     engines: {node: '>=11.0.0'}
 
+>>>>>>> 7c65113 (Initial commit)
   scheduler@0.27.0:
     resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
@@ -1976,11 +2004,14 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
+<<<<<<< HEAD
+=======
   svgo@4.0.1:
     resolution: {integrity: sha512-XDpWUOPC6FEibaLzjfe0ucaV0YrOjYotGJO1WpF0Zd+n6ZGEQUsSugaoLq9QkEZtAfQIxT42UChcssDVPP3+/w==}
     engines: {node: '>=16'}
     hasBin: true
 
+>>>>>>> 7c65113 (Initial commit)
   tailwindcss@4.2.2:
     resolution: {integrity: sha512-KWBIxs1Xb6NoLdMVqhbhgwZf2PGBpPEiwOqgI4pFIYbNTfBXiKYyWoTsXgBQ9WFg/OlhnvHaY+AEpW7wSmFo2Q==}
 
@@ -2295,7 +2326,12 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
+<<<<<<< HEAD
+  '@img/colour@1.1.0':
+    optional: true
+=======
   '@img/colour@1.1.0': {}
+>>>>>>> 7c65113 (Initial commit)
 
   '@img/sharp-darwin-arm64@0.34.5':
     optionalDependencies:
@@ -2895,8 +2931,11 @@ snapshots:
 
   color-name@1.1.4: {}
 
+<<<<<<< HEAD
+=======
   commander@11.1.0: {}
 
+>>>>>>> 7c65113 (Initial commit)
   concat-map@0.0.1: {}
 
   convert-source-map@2.0.0: {}
@@ -2915,6 +2954,10 @@ snapshots:
       domutils: 3.2.2
       nth-check: 2.1.1
 
+<<<<<<< HEAD
+  css-what@6.2.2: {}
+
+=======
   css-tree@2.2.1:
     dependencies:
       mdn-data: 2.0.28
@@ -2931,6 +2974,7 @@ snapshots:
     dependencies:
       css-tree: 2.2.1
 
+>>>>>>> 7c65113 (Initial commit)
   csstype@3.2.3: {}
 
   damerau-levenshtein@1.0.8: {}
@@ -3753,10 +3797,13 @@ snapshots:
 
   math-intrinsics@1.1.0: {}
 
+<<<<<<< HEAD
+=======
   mdn-data@2.0.28: {}
 
   mdn-data@2.27.1: {}
 
+>>>>>>> 7c65113 (Initial commit)
   merge2@1.4.1: {}
 
   micromatch@4.0.8:
@@ -4020,8 +4067,11 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
+<<<<<<< HEAD
+=======
   sax@1.6.0: {}
 
+>>>>>>> 7c65113 (Initial commit)
   scheduler@0.27.0: {}
 
   semver@6.3.1: {}
@@ -4080,6 +4130,10 @@ snapshots:
       '@img/sharp-win32-arm64': 0.34.5
       '@img/sharp-win32-ia32': 0.34.5
       '@img/sharp-win32-x64': 0.34.5
+<<<<<<< HEAD
+    optional: true
+=======
+>>>>>>> 7c65113 (Initial commit)
 
   shebang-command@2.0.0:
     dependencies:
@@ -4191,6 +4245,8 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
+<<<<<<< HEAD
+=======
   svgo@4.0.1:
     dependencies:
       commander: 11.1.0
@@ -4201,6 +4257,7 @@ snapshots:
       picocolors: 1.1.1
       sax: 1.6.0
 
+>>>>>>> 7c65113 (Initial commit)
   tailwindcss@4.2.2: {}
 
   tapable@2.3.0: {}

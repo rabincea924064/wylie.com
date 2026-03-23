@@ -7,11 +7,11 @@
 
 @theme inline {
   /* Brand Colors */
-  --color-primary: #556068;
-  --color-primary-light: #727f87;
-  --color-primary-lighter: #a3adb3;
-  --color-primary-dark: #3a444a;
-  --color-primary-darker: #2d353a;
+  --color-primary: #727f87;
+  --color-primary-light: #8a959c;
+  --color-primary-lighter: #b5bcc1;
+  --color-primary-dark: #5a656c;
+  --color-primary-darker: #434d53;
   --color-secondary: #000000;
   --color-accent: #c8a96e;
   --color-accent-light: #dcc48f;

@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Button from "./Button";
 import SidebarForm from "./SidebarForm";
-import gsap from "gsap"; // STATIC IMPORT AS REQUESTED
+import gsap from "gsap";
 
 export default function HomeHero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -13,18 +13,16 @@ export default function HomeHero() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // DISABLE GSAP ON MOBILE for performance scores
+    // Disable GSAP on mobile for performance
     if (window.innerWidth < 1024) return;
 
     const ctx = gsap.context(() => {
-      // Main container fade in
       gsap.from(containerRef.current, {
         opacity: 0,
         duration: 2,
         ease: "power2.out",
       });
 
-      // Left Column Stagger
       const children = leftColRef.current?.children;
       if (children) {
         gsap.from(Array.from(children), {
@@ -37,7 +35,6 @@ export default function HomeHero() {
         });
       }
 
-      // Form animation
       if (formRef.current) {
         gsap.from(formRef.current, {
           opacity: 0,
@@ -49,7 +46,6 @@ export default function HomeHero() {
         });
       }
 
-      // Scroll indicator float
       if (scrollRef.current) {
         gsap.to(scrollRef.current, {
           y: 10,
@@ -66,7 +62,11 @@ export default function HomeHero() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative min-h-[90vh] flex items-center overflow-hidden perspective-1000" id="hero">
+    <section
+      ref={containerRef}
+      className="relative min-h-[90vh] flex items-center overflow-hidden perspective-1000"
+      id="hero"
+    >
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -83,21 +83,21 @@ export default function HomeHero() {
       {/* Hero Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           {/* Left Column (Text & CTAs) */}
           <div ref={leftColRef} className="lg:col-span-7">
             <span className="inline-block text-accent-light text-caption uppercase font-semibold tracking-widest mb-4 drop-shadow-md">
               Cornwall, ON &bull; Trusted HVAC Experts
             </span>
-            
+
             <h1 className="text-display text-white mb-6 leading-tight drop-shadow-xl">
               Your Comfort Is Our <span className="text-primary-lighter relative">Priority</span>
             </h1>
-            
+
             <p className="text-body text-white/90 max-w-lg mb-8 leading-relaxed text-lg drop-shadow-md">
               Professional heating, cooling, and indoor air quality services for the Greater Cornwall area. Fast, affordable, and reliable when you need us most.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Button href="tel:613-577-2726" variant="primary" size="lg" className="shadow-2xl shadow-primary/30 min-w-[200px] hover:scale-105 transition-transform">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 inline">
